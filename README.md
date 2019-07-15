@@ -23,7 +23,7 @@ Enjoy.
 
 ## License
 
-This project is licensed under the GNu GPL v3.0 License, inherited from the Numix project, since I used their icons - see the [LICENSE](LICENSE.md) file for details.
+This project is licensed under the GNu GPL v3.0, inherited from the Numix project, since I used their icons - see the [LICENSE](LICENSE.md) file for details.
 
 ## Acknowledgments
 
