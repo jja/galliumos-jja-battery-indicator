@@ -21,6 +21,11 @@ In the Generic monitor properties:
 
 Enjoy.
 
+## Design
+
+If you don't like the icons, replace them in the `icons` folder. They will work, as long as they follow naming convention. Note, that many Xfce themes already have them.
+Alternatively, you can change the `ICON_DIR` variable in the script, to your preferable theme's icon pack, if it has the appropriately named icons. E.g.: `ICON_DIR="/usr/share/icons/Numix/24/status/"`.
+
 ## License
 
 This project is licensed under the GNu GPL v3.0, inherited from the Numix project, since I used their icons - see the [LICENSE](LICENSE.md) file for details.
