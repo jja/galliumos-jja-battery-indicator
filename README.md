@@ -10,10 +10,11 @@ It is a bash script, that probably won't run on other shells, so `/bin/bash` is 
 * `git clone https://gitlab.com/101/galliumos-sane-battery-indicator.git`
 * `cd galliumos-sane-battery-indicator`
 * `chmod +x battery-indicator.sh`
-* In an Xfce panel, create new "Generic monitor"
+* Remove the old battery indicator from the Xfce panel.
+* In the Xfce panel, create new "Generic monitor"
 * In its properties set command to the absolute path of `battery-indicator.sh`
 * Set the refresh rate to whatever you like. E.g. 2 seconds.
-* Remove the old indicator from the panel.
+* Uncheck "Label"
 
 ## License
 
