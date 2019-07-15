@@ -1,17 +1,5 @@
 #!/bin/bash
 
-# A sane battery indicator for Xfce4
-# Inspired by (and mostly stolen from) this comment https://forum.xfce.org/viewtopic.php?pid=47879#p47879
-# To run it: 
-# Clone this
-
-
-#https://github.com/xfce-mirror/xfce4-genmon-plugin
-
-# CREATE WITH CLI https://forum.xfce.org/viewtopic.php?id=8619
-
-
-
 ICON_DIR=$(dirname "$0")"/icons/"
 ICON_EXT="svg"
 ICON_PREFIX="battery"
