@@ -12,9 +12,14 @@ It is a bash script, that probably won't run on other shells, so `/bin/bash` is 
 * `chmod +x battery-indicator.sh`
 * Remove the old battery indicator from the Xfce panel.
 * In the Xfce panel, create new "Generic monitor"
-* In its properties set command to the absolute path of `battery-indicator.sh`
+
+In the Generic monitor properties:
+
+* Set command to the absolute path of `battery-indicator.sh`
 * Set the refresh rate to whatever you like. E.g. 2 seconds.
 * Uncheck "Label"
+
+Enjoy.
 
 ## License
 
