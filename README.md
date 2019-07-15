@@ -13,6 +13,7 @@ It is a bash script, that probably won't run on other shells, so `/bin/bash` is 
 * In an Xfce panel, create new "Generic monitor"
 * In its properties set command to the absolute path of `battery-indicator.sh`
 * Set the refresh rate to whatever you like. E.g. 2 seconds.
+* Remove the old indicator from the panel.
 
 ## License
 
