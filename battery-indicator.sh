@@ -1,6 +1,12 @@
 #!/bin/bash
 
-ICON_DIR=$(dirname "$0")"/icons/"
+if [ -n "$1" ]; then
+    SCALE=$1
+else
+    SCALE=24
+fi
+
+ICON_DIR=$(dirname "$0")"/icons/"$SCALE"/"
 ICON_EXT="svg"
 ICON_PREFIX="battery"
 
