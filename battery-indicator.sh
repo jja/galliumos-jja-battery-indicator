@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ -n "$1" ]; then
+if [ "$1" =~ ^(16|24|32|48)$ ]; then
     SCALE=$1
 else
     SCALE=24

@@ -21,10 +21,13 @@ In the Generic monitor properties:
 
 Enjoy.
 
+## Usage
+
+By default, icons are 24px. The script accepts optional parameter for different sizes, it can be 32, 48, 24 or 16. Like this: `/path/to/script/battery-indicator.sh 48`.
+
 ## Design
 
 If you don't like the icons, replace them in the `icons` folder. They will work, as long as they follow naming convention. Note, that many Xfce themes already have them.
-Alternatively, you can change the `ICON_DIR` variable in the script, to your preferable theme's icon pack, if it has the appropriately named icons. E.g.: `ICON_DIR="/usr/share/icons/Numix/24/status/"`.
 
 ## License
 
