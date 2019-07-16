@@ -1,10 +1,6 @@
 #!/bin/bash
 
-if [ "$1" =~ ^(16|24|32|48)$ ]; then
-    SCALE=$1
-else
-    SCALE=24
-fi
+SCALE=24
 
 ICON_DIR=$(dirname "$0")"/icons/"$SCALE"/"
 ICON_EXT="svg"
