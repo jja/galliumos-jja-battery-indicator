@@ -23,8 +23,7 @@ Enjoy.
 
 ## Usage
 
-By default, icons are 24px. The script accepts optional parameter for different sizes, it can be 32, 48, 24 or 16.
-Like this: `/path/to/script/battery-indicator.sh 48`.
+By default, icons are 24px. The script accepts optional parameter for different sizes, it can be 32, 48, 24 or 16. Like this: `/path/to/script/battery-indicator.sh 48`.
 
 ## Design
 
