@@ -35,6 +35,10 @@ BATTERY_NAME="/org/freedesktop/UPower/devices/battery_BAT0"
 
 read -N256 REQ <<<$(upower -i $BATTERY_NAME | grep -E "state|to\ full|time\ to\ empty|percentage" )
 
+# example REQ values:
+#  state: charging time to full: 49.5 minutes percentage: 54%
+#  state: discharging time to empty: 24.3 minutes percentage: 8%
+
 if [ -z "$REQ" ]
 then
   continue
@@ -45,7 +49,15 @@ arrState=($REQ)
 AC=${arrState[1]}
 ETA=${arrState[5]}\ ${arrState[6]}
 PERCENTAGE=${arrState[8]//%/}
-PERCENT_ICON="0"${PERCENTAGE:0:1}"0"
+
+if [ $PERCENTAGE -lt 10 ]
+then
+ PERCENT_ICON="000"
+else
+ PERCENT_ICON="0"${PERCENTAGE:0:1}"0"
+fi
+
+# echo $(( 10#$x ))
 
 case $AC in
     "charging") SUFFIX="-charging" ;;
@@ -63,7 +75,7 @@ ICON=$ICON_DIR$ICON_PREFIX-$PCT$SUFFIX.$ICON_EXT
 
 if [ ! -e "$ICON" ]
 then
-  echo "$0" "no icon, continuing to try again..."
+  echo "$0" "no icon, continuing to try again..." 1>&2
   echo "REQ=$REQ" 1>&2
   echo "AC=$AC" 1>&2
   echo "PERCENTAGE=$PERCENTAGE" 1>&2
